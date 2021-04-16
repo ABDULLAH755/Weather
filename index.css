@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+body{
+    background: url(bg.jpg);
+    color: lightgray;
+    margin: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wthr{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.label{
+    padding: 15px;
+    font-size: 20px;
+}
+
+input[type=text] {
+    margin-top: 20px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    color: black;
+    background-color:lightgray;
+}
+.btn{
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 100px;
+    background-color: darkgrey;
+}
+
+.viewData {
+    margin: 60px 0px;
+    line-height: 1.2;
+    color: black;
+    text-align: center;
+}
+
+.viewData ul {
+    list-style-type: none;
+}
+
+.viewData .city {
+    font-size: 5rem;
+}
+
+.viewData .temp {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.viewData .desc {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 450px) {
+    input[type=text] {
+        width: 150px;
+    }
+
+    .viewData ul{
+        padding: 0;
+    }
+}  
